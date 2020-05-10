@@ -2,18 +2,205 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Media Query Example</title>
+  <title>Happiness Project</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
-
-<!--Giving each div a different class in order to apply styles to them-->
-  <div class="box box-1"></div>
-  <div class="box box-2"></div>
-  <div class="box box-3"></div>
-  <div class="box box-4"></div>
-  <div class="box box-5"></div>
-
+  <!-- navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Happiness Project</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Data</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Visualization 1</a>
+            <a class="dropdown-item" href="#">Visualization 2</a>
+            <a class="dropdown-item" href="#">Visualization 3</a>
+            <a class="dropdown-item" href="#">Visualization 4</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- HOMEPAGE -->
+  <!-- carousel  -->
+  <div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Images/trevor-cole-CWcAsKuhwy0-unsplash.jpg" class="d-block w-100" alt="Photo by Trevor Cole on Unsplash">
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/alex-alvarez-63YVMrL2d6g-unsplash.jpg" class="d-block w-100" alt="Photo by Alex Alvarez on Unsplash">
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/larm-rmah-AEaTUnvneik-unsplash.jpg" class="d-block w-100" alt="Photo by Larm Rmah on Unsplash">
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/mi-pham-FtZL0r4DZYk-unsplash.jpg" class="d-block w-100" alt="Photo by MI PHAM on Unsplash">
+        </div>">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!-- project summary -->
+      <div class="row">
+        <div class="col-md">
+          <h1>Project Summary</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <p>The team wanted to focus on something that would bring us joy. We decided to work with the world happieness dataset. 
+            We spent 10 days analyizing the 7 factors of happiness provided in the study as well as brainstorming some potential external factors that
+            might influence happines. 
+          </p>
+        </div>
+      </div>
+<hr>
+      <div class="row">
+        <div class="col-md-2"> Income (GDP per Capita)  (data from World Bank)</div>
+        <div class="col-md-2">Healthy life expectancy (data from WHO, WDI)</div>
+        <div class="col-md-2">Freedom</div>
+        <div class="col-md-2">Trust (in government / business)</div>
+        <div class="col-md-2">Generosity</div>
+        <div class="col-md-2">Social support
+        </div>
+      </div>
+<hr>
+      <!-- questions to answer -->
+      <div class="list-group">
+        <button type="button" class="list-group-item list-group-item-action active">
+          Questions We Wanted To Answer
+        </button>
+        <button type="button" class="list-group-item list-group-item-action">Of the 7 factors, which influences a countries happiness score the most?</button>
+        <button type="button" class="list-group-item list-group-item-action">What is the Happiest Country?</button>
+        <button type="button" class="list-group-item list-group-item-action">What is the saddest Country?</button>
+        <button type="button" class="list-group-item list-group-item-action" disabled>Are there any geographical patterns to world happiness?</button>
+        <button type="button" class="list-group-item list-group-item-action">Are there any external world events that might also influence world happiness?</button>
+      </div>
+<hr>
+      <!-- team -->
+      <h3>Team</h3>
+      <ul class="list-unstyled">
+        <li class="media">
+          <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEF9iLp4JEoow/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=HvFZ-u6B-1NnTrHN9pc7KFFpCpELLH25LJTRRspRykA" class="mr-4" alt="...">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Alessio Cei</h5>
+          </div>
+        </li>
+        <li class="media my-4">
+          <img src="https://media-exp1.licdn.com/dms/image/C5603AQH7i0S9ffWfnw/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=DzHwFVmdaSTWgc719EhGP1-wlzGzFG-C7hPjvCNOxgw" class="mr-4" alt="...">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Cynthia Kellogg</h5>
+          </div>
+        </li>
+        <li class="media">
+          <img src="https://media-exp1.licdn.com/dms/image/C5603AQGz_dzOc5eFdA/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=keQE6i_qP_yFIV6WBytj7Ia2QoG-YB19TVIimoFggV4" class="mr-4" alt="...">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Dany Christel</h5>
+          </div>
+        </li>
+        <li class="media">
+          <img src="https://ca.slack-edge.com/TT6NRD7QR-UTY81657B-400b797e32d8-512" class="mr-4" alt="...">
+          <!-- <img src="https://media-exp1.licdn.com/dms/image/C5603AQEsLkiX1qbu5A/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=VUM1c-_6N8AxjBfn1U6XGzsgGMgaZBbLG-Ve3S3EuRk" class="mr-3" alt="..."> -->
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Robert Findlater</h5>
+          </div>
+        </li>
+      </ul>
+      <!-- references -->
+      <div class="row">
+        <div class="col-md">
+          <h4>Reference Links:</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>The World Happiness <a href="https://www.kaggle.com/unsdsn/world-happiness" target="blank">Dataset</a></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>The Github <a href="https://github.com/DanyCh093/Project-One-" target="blank">Repository</a></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- COMPARISONS PAGE -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <figure class="figure">
+        <img src="..." class="figure-img img-fluid rounded" alt="...">
+        <figcaption class="figure-caption">Plot 1</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <figure class="figure">
+      <img src="..." class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption">Plot 2.</figcaption>
+    </figure>
+  </div>
+  <div class="col-md-4">
+    <figure class="figure">
+      <img src="..." class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption">Plot 3.</figcaption>
+    </figure>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <figure class="figure">
+        <img src="..." class="figure-img img-fluid rounded" alt="...">
+        <figcaption class="figure-caption">Plot 4.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <figure class="figure">
+      <img src="..." class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption">Plot 5.</figcaption>
+    </figure>
+  </div>
+  <div class="col-md-4">
+    <figure class="figure">
+      <img src="..." class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption">Plot 6.</figcaption>
+    </figure>
+  </div>
+</div>
+<!-- VISUALIZATIONS PAGE -->
+<div class="container">
+  
+</div>
+<!-- DATA PAGE -->
+<div class="container">
+  
+</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
