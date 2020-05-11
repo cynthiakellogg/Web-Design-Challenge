@@ -1,7 +1,7 @@
 /* giving the body a dark background to better see the bright colored boxes */
-body {
-  background: #555;
-  color: white;
+
+.navbar-nav {
+  margin-left: 500px;
 }
 
 
