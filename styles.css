@@ -40,7 +40,7 @@ h1, h4 {
 /* Here we define some styles that will ONLY be applied at screen sizes below 600 pixels */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  
- 
+  
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
