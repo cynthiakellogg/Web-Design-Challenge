@@ -20,9 +20,9 @@ footer {padding: 20px;
   width: 100%;
 }
 
-/* .container {
-  padding: 10px;
-} */
+#carousel {
+  padding-top: 50px;
+}
 
 h1, h4 {
   text-align: center;
@@ -31,6 +31,10 @@ h1, h4 {
 
 .plots {
   background-color: lightyellow;
+}
+
+.reference-links {
+  padding-bottom: 10px;
 }
 
 /* Here we define some styles that will ONLY be applied at screen sizes below 600 pixels */
