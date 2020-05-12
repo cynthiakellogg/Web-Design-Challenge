@@ -10,38 +10,38 @@
 </head>
 <body>
   <!-- navbar  -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Happiness Project</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="comparisons.html">Comparisons</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="data.html">Data</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="plots.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="usa_plot.html">United States Plot</a>
-            <a class="dropdown-item" href="russia_plot.html">Russia Plot</a>
-            <a class="dropdown-item" href="south_korea_plot.html">South Korea Plot</a>
-            <a class="dropdown-item" href="germany_plot.html">Germany Plot</a>
-            <a class="dropdown-item" href="costa_rica_plot.html">Costa Rica Plot</a>
-            <a class="dropdown-item" href="nigeria_plot.html">Nigeria Plot</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Happiness Project</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="plots.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Plots</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="usa_plot.html">United States Plot</a>
+              <a class="dropdown-item" href="russia_plot.html">Russia Plot</a>
+              <a class="dropdown-item" href="south_korea_plot.html">South Korea Plot</a>
+              <a class="dropdown-item" href="germany_plot.html">Germany Plot</a>
+              <a class="dropdown-item" href="costa_rica_plot.html">Costa Rica Plot</a>
+              <a class="dropdown-item" href="nigeria_plot.html">Nigeria Plot</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</div>
 <!-- HOMEPAGE -->
   <!-- carousel  -->
-  <div class="container">
+  <div class="container" id="carousel">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -55,7 +55,6 @@
         </div>
         <div class="carousel-item">
           <img src="Images/mi-pham-FtZL0r4DZYk-unsplash.jpg" class="d-block w-100" alt="Photo by MI PHAM on Unsplash">
-        </div>">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -66,65 +65,56 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-      <!-- project summary -->
-      <div class="row">
-        <div class="col-md">
-          <h1>Project Summary</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md">
-          <p>The team wanted to focus on something that would bring us joy. We decided to work with the world happieness dataset. 
-            My role was to look at possible other events or factors that might influnce world happiness that are not accounted for in this study.
-            After a team brainstorm, we decided to look at 2 major world events:
-            <ol>
-              <li><strong>The 2018 World Cup, Hosted in Russia</strong></li>
-              <li><strong>The 2018 Winter Olympics, Hosted in South Korea</strong></li>
-            </ol>
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md">
-          <p>
-          </p>
-          <p>The hypothesis was that 2018 would have higher scores than the rest of the years in the data set due to 2 major world events that are designed to bring people together for fun. 
-            Dive into the <a href="comparisons.html" target="blank">comparisons page</a> to see what we learned.
-          </p>
-        </div>
     </div>
-<hr>
-      <h5>Here are the 6 factors used to measure happiness:</h5>
-      <div class="row">
-        <div class="col-md-2"> Income (GDP per Capita)  (data from World Bank)</div>
-        <div class="col-md-2">Healthy life expectancy (data from WHO, WDI)</div>
-        <div class="col-md-2">Freedom</div>
-        <div class="col-md-2">Trust (in government / business)</div>
-        <div class="col-md-2">Generosity</div>
-        <div class="col-md-2">Social support
-        </div>
+  </div>  
+  <hr>
+      <!-- project summary -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md"><h1>Project Summary</h1></div>
+    </div>
+    <div class="row">
+      <div class="col-md"><p>The team wanted to focus on something that would bring us joy. We decided to work with the world happieness dataset. 
+            My role was to look at possible other events or factors that might influnce world happiness that are not accounted for in this study.
+            After a team brainstorm, we decided to look at 2 major world events:</p></div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <ol>
+          <li><strong>The 2018 World Cup, Hosted in Russia</strong></li>
+          <li><strong>The 2018 Winter Olympics, Hosted in South Korea</strong></li>
+        </ol>
       </div>
-<hr>
-      
-<hr>
+    </div>
+    <div class="row">
+      <div class="col-md-12"><p>The hypothesis was that 2018 would have higher scores than the rest of the years in the data set due to 2 major world events that are designed to bring people together for fun. Dive into the <a href="comparisons.html" target="blank">comparisons page</a> to see what we learned.</p></div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-md"><h5>Here are the 6 factors used to measure happiness:</h5></div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"> Income (GDP per Capita)  (data from World Bank)</div>
+      <div class="col-md-2">Healthy life expectancy (data from WHO, WDI)</div>
+      <div class="col-md-2">Freedom</div>
+      <div class="col-md-2">Trust (in government / business)</div>
+      <div class="col-md-2">Generosity</div>
+      <div class="col-md-2">Social support</div>
+    </div> -->
+  </div>
+  <hr>
       <!-- references -->
-      <div class="row">
-        <div class="col-md">
-          <h5>Reference Links:</h5>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h6>The World Happiness <a href="https://www.kaggle.com/unsdsn/world-happiness" target="blank">Dataset</a></h6>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h6>The Github <a href="https://github.com/DanyCh093/Project-One-" target="blank">Repository </a>for the full project.</h6>
-        </div>
-      </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md"><h5>Reference Links:</h5></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6"><h6>The World Happiness <a href="https://www.kaggle.com/unsdsn/world-happiness" target="blank">Dataset</a></h6></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6"><h6>The Github <a href="https://github.com/DanyCh093/Project-One-" target="blank">Repository </a>for the full project.</h6></div>
     </div>
   </div>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
